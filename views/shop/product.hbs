@@ -1,0 +1,56 @@
+<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- Product main img -->
+					<div class="col-md-5">
+						<div id="product-main-img">
+								<img src="{{products.image}}" alt="">
+						</div>
+					</div>
+					<!-- /Product main img -->
+
+					<div class="col-md-2  col-md-pull-5">
+					</div>
+
+					<!-- Product details -->
+					<div class="col-md-5">
+						<div class="product-details">
+							<h2 class="product-name">{{products.title}}</h2>
+							<div>
+								<h3 class="product-price">₹{{products.price}}</h3>
+								<span class="product-available">In Stock</span>
+							</div>
+							<p>{{products.description}}</p>
+
+                            <hr>
+
+							<div class="add-to-cart">
+								
+								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> <a href="/add-to-cart/{{this._id}}">add to cart</a></button>
+							</div>
+
+							<ul class="product-links">
+								<li>Category:</li>
+								<li><a href="#">{{products.category}}</a></li> 
+							</ul>
+
+							<ul class="product-links">
+								<li>Share:</li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+							</ul>
+
+						</div>
+					</div>
+					<!-- /Product details -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->

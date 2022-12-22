@@ -1,0 +1,86 @@
+<!-- HEADER -->
+<header>
+	<!-- TOP HEADER -->
+	<div id="top-header">
+		<div class="container">
+			<ul class="header-links pull-left">
+				<li><a href="#"><i class="fa fa-phone"></i> +091 98765xxxxx</a></li>
+				<li><a href="#"><i class="fa fa-envelope-o"></i> techbuy@gmail.com</a></li>
+				<li><a href="#"><i class="fa fa-map-marker"></i> 150ft Ring Road</a></li>
+			</ul>
+			<ul class="header-links pull-right">
+				<li><a href="#"><i class="fa fa-rupee"></i> IND</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-user-o"></i>My Account
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							{{#if login}}
+							<a class="dropdown-item" href="/user/profile">Profile</a><br><br>
+							<a class="dropdown-item" href="/user/logout">Log Out</a>
+							{{else}}
+							<a class="dropdown-item" href="/user/signup">Sign Up</a><br><br>
+							<a class="dropdown-item" href="/user/signin">Sign In</a>
+							{{/if}}
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /TOP HEADER -->
+
+	<!-- MAIN HEADER -->
+	<div id="header">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- LOGO -->
+				<div class="col-md-3">
+					<div class="header-logo">
+						<a href="/" class="logo">
+							<img src="../images/logo.png" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- /LOGO -->
+
+				<div class="col-md-6">
+				</div>
+
+				<!-- ACCOUNT -->
+				<div class="col-md-3 clearfix">
+					<div class="header-ctn">
+
+						<!-- Cart -->
+						<div class="dropdown">
+							<a href="/cart">
+								<i class="fa fa-shopping-cart"></i>
+								<span>Your Cart</span>
+								<div class="qty">{{session.cart.totalQty}}</div>
+							</a>
+						</div>
+						<!-- /Cart -->
+
+						<!-- Menu Toogle -->
+						<div class="menu-toggle">
+							<a href="#">
+								<i class="fa fa-bars"></i>
+								<span>Menu</span>
+							</a>
+						</div>
+						<!-- /Menu Toogle -->
+					</div>
+				</div>
+				<!-- /ACCOUNT -->
+			</div>
+			<!-- row -->
+		</div>
+		<!-- container -->
+	</div>
+	<!-- /MAIN HEADER -->
+</header>
+<!-- /HEADER -->
